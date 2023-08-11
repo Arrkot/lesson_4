@@ -4,7 +4,7 @@ from .models import Advertisements
 
 class AdvertisementsAdmin(admin.ModelAdmin):
     # list_display = ['id', 'title', 'description', 'price', 'created_date', 'update_date', 'auction']
-    list_display = ['id', 'title', 'description', 'price', 'created_date', 'updated_date', 'auction']
+    list_display = ['id', 'title', 'description', 'price', 'created_date', 'updated_date', 'auction', 'image', 'picture', 'image_display']
     list_filter = ['auction', 'create_at']
 
 admin.site.register(Advertisements, AdvertisementsAdmin)
